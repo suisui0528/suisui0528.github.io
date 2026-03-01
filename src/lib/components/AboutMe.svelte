@@ -57,7 +57,7 @@
 				<div
 					class="rounded-xl border border-sys-surface bg-sys-surface/60 p-4 text-center backdrop-blur-md transition-all duration-300 hover:border-sys-accent/30 hover:shadow-md"
 				>
-					<div class="text-sm font-bold tracking-widest text-sys-text/45 uppercase">
+					<div class="text-sm font-bold tracking-widest text-sys-text/60 uppercase">
 						{stat.label}
 					</div>
 					<div class="mt-1 text-lg font-black text-sys-text md:text-lg">{stat.value}</div>
@@ -68,7 +68,7 @@
 		<!-- Personality & Hobbies Tags -->
 		<div class="mb-12 flex flex-col gap-6 sm:flex-row sm:gap-10" use:reveal={{ delay: 200 }}>
 			<div>
-				<h3 class="mb-3 text-sm font-bold tracking-widest text-sys-text/50 uppercase">性格</h3>
+				<h3 class="mb-3 text-sm font-bold tracking-widest text-sys-text/60 uppercase">性格</h3>
 				<div class="flex flex-wrap gap-2">
 					{#each character.personalities as p}
 						<span
@@ -80,7 +80,7 @@
 				</div>
 			</div>
 			<div>
-				<h3 class="mb-3 text-sm font-bold tracking-widest text-sys-text/50 uppercase">興趣</h3>
+				<h3 class="mb-3 text-sm font-bold tracking-widest text-sys-text/60 uppercase">興趣</h3>
 				<div class="flex flex-wrap gap-2">
 					{#each character.hobbies as h}
 						<span
@@ -95,7 +95,7 @@
 
 		<!-- Artist Credits -->
 		<div class="mt-14" use:reveal={{ delay: 400 }}>
-			<h3 class="mb-6 text-center text-sm font-bold tracking-widest text-sys-text/40 uppercase">
+			<h3 class="mb-6 text-center text-sm font-bold tracking-widest text-sys-text/60 uppercase">
 				賦形之手
 			</h3>
 			<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -112,7 +112,7 @@
 							/>
 						{/if}
 						<div class="min-w-0">
-							<div class="text-[11px] font-bold tracking-widest text-sys-text/45 uppercase">
+							<div class="text-[11px] font-bold tracking-widest text-sys-text/60 uppercase">
 								{artist.role}
 							</div>
 							{#if artist.url}
@@ -135,7 +135,7 @@
 
 		<!-- Social Links -->
 		<div class="mt-14 flex flex-col items-center gap-5" use:reveal={{ delay: 500 }}>
-			<h3 class="text-sm font-bold tracking-widest text-sys-text/40 uppercase">連結</h3>
+			<h3 class="text-sm font-bold tracking-widest text-sys-text/60 uppercase">連結</h3>
 			<div class="flex flex-wrap items-center justify-center gap-4">
 				{#each socialLinks as link (link.name)}
 					<a
