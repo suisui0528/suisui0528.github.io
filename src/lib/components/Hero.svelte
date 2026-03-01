@@ -45,7 +45,7 @@
 
 <section
 	id="hero"
-	class="relative flex min-h-screen w-full snap-start items-center justify-center overflow-hidden pt-16"
+	class="relative flex min-h-screen w-full snap-start items-center justify-center overflow-hidden pt-16 pb-10 md:pb-0"
 >
 	<!-- Background Images (cross-fade transition) -->
 	<div class="absolute inset-0 z-0 overflow-hidden">
