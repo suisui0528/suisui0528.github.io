@@ -10,7 +10,7 @@
 	<div class="container mx-auto flex flex-col items-center justify-center gap-6 px-6">
 		<!-- Copyright & Author -->
 		<div
-			class="flex flex-col items-center gap-2 text-xs tracking-wider text-sys-text/50 md:flex-row md:gap-3 md:text-sm"
+			class="flex flex-col items-center gap-2 tracking-wider text-sys-text/50 md:flex-row md:gap-3"
 		>
 			<span class="font-medium">
 				© {new Date().getFullYear()} SuiSui. All rights reserved.
