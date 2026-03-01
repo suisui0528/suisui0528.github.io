@@ -25,7 +25,7 @@ src/
   lib/
     data.ts         # Data utilities
     assets/
-    components/     # 
+    components/
 build/              # Static output (precompressed, auto-generated)
 ```
 

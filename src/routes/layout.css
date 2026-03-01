@@ -2,15 +2,17 @@
 
 @theme {
 	--font-sans: 'wdxl-lubrifont-tc', ui-sans-serif, system-ui, sans-serif;
-	--color-primary-900: #0a0a1a;
-	--color-primary-800: #1a1a2e;
-	--color-primary-600: #2d2f5a;
-	--color-accent-gold: #c3a35f;
-	--color-accent-glow: #e2c079;
+
+	--color-sys-base: #91ecff;
+	--color-sys-surface: #ffffff;
+	--color-sys-text: #0f172a;
+	--color-sys-accent: #cc0022;
+	--color-sys-accent-hover: #e60026;
 
 	--animate-float: float 6s ease-in-out infinite;
 	--animate-astrolabe-spin: astrolabe-spin 120s linear infinite;
-	--animate-crystal-glow: crystal-glow 4s ease-in-out infinite;
+	--animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
+	--animate-fade-in-up: fade-in-up 0.8s ease-out both;
 
 	@keyframes float {
 		0%,
@@ -31,38 +33,50 @@
 		}
 	}
 
-	@keyframes crystal-glow {
+	@keyframes glow-pulse {
 		0%,
 		100% {
-			filter: drop-shadow(0 0 15px rgba(132, 212, 255, 0.4));
+			opacity: 0.3;
 		}
 		50% {
-			filter: drop-shadow(0 0 35px rgba(132, 212, 255, 0.8));
+			opacity: 0.6;
+		}
+	}
+
+	@keyframes fade-in-up {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 }
 
 html {
 	scroll-behavior: smooth;
-	background-color: var(--color-primary-900);
-	color: #e2e8f0;
+	background-color: var(--color-sys-base);
+	color: var(--color-sys-text);
+	overflow-x: hidden;
 }
 
 body {
 	overflow-x: hidden;
+	background-color: var(--color-sys-base);
 }
 
-/* Custom Scrollbar for mystique */
 ::-webkit-scrollbar {
 	width: 8px;
 }
 ::-webkit-scrollbar-track {
-	background: var(--color-primary-900);
+	background: var(--color-sys-surface);
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--color-primary-600);
+	background: var(--color-sys-text);
 	border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--color-accent-gold);
+	background: var(--color-sys-accent);
 }
