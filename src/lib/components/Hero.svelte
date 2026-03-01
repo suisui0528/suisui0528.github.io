@@ -87,7 +87,7 @@
 						: 'text-sys-text'}"
 					onclick={() => setMode('day')}
 				>
-					<Sun class="h-4 w-4" /> 晨星
+					<Sun class="h-4 w-4" /> 早晨
 				</button>
 				<button
 					class="flex items-center gap-2 rounded-lg px-4 py-2 text-sm transition-colors hover:bg-sys-accent hover:text-white {mode ===
@@ -96,7 +96,7 @@
 						: 'text-sys-text'}"
 					onclick={() => setMode('evening')}
 				>
-					<Sunset class="h-4 w-4" /> 昏靄
+					<Sunset class="h-4 w-4" /> 黃昏
 				</button>
 				<button
 					class="flex items-center gap-2 rounded-lg px-4 py-2 text-sm transition-colors hover:bg-sys-accent hover:text-white {mode ===
@@ -105,7 +105,7 @@
 						: 'text-sys-text'}"
 					onclick={() => setMode('night')}
 				>
-					<Moon class="h-4 w-4" /> 夜幕
+					<Moon class="h-4 w-4" /> 夜晚
 				</button>
 			</div>
 		{/if}
