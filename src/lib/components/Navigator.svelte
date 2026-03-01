@@ -27,7 +27,7 @@
 	<div class="flex items-center gap-6">
 		<!-- Navigation Links -->
 		<div class="hidden gap-6 text-lg text-sys-text/80 md:flex">
-			<a href="#hero" class="transition-colors duration-200 hover:text-sys-accent">殿堂</a>
+			<a href="#hero" class="transition-colors duration-200 hover:text-sys-accent">入口</a>
 			<a href="#about" class="transition-colors duration-200 hover:text-sys-accent">淵源</a>
 		</div>
 	</div>

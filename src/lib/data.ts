@@ -42,7 +42,7 @@ interface SocialLink {
 export const content: ContentData = {
 	hero: {
 		greeting: '歡迎來到魔界預言小鋪',
-		subtitle: '這裡是先知的殿堂。在此，未來的迷霧將被揭開...'
+		subtitle: '到此即是機緣巧合，畢竟...... 平時可不隨意對外開放的'
 	},
 	about: {
 		title: '先知的淵源'
