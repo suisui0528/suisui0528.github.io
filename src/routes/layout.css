@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-	--font-sans: 'wdxl-lubrifont-tc', ui-sans-serif, system-ui, sans-serif;
+	--font-sans: 'WDXL Lubrifont TC', ui-sans-serif, system-ui, sans-serif;
 
 	--color-sys-base: #91ecff;
 	--color-sys-surface: #ffffff;
