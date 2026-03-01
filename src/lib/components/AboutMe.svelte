@@ -36,7 +36,7 @@
 
 <section
 	id="about"
-	class="relative flex min-h-screen w-full snap-start items-center justify-center bg-sys-base"
+	class="relative flex min-h-screen w-full snap-start items-center justify-center bg-sys-base py-10"
 >
 	<!-- Decorative background elements -->
 	<div
