@@ -120,11 +120,11 @@
 			class="order-2 flex flex-1 animate-fade-in-up flex-col items-center rounded-3xl border border-sys-surface/80 bg-sys-surface/60 p-8 text-center shadow-2xl backdrop-blur-lg md:order-1 md:items-start md:p-12 md:text-left"
 		>
 			<h1
-				class="mb-6 text-4xl leading-tight font-black text-sys-accent drop-shadow-sm md:text-5xl lg:text-6xl"
+				class="mb-6 text-4xl leading-tight font-bold text-sys-accent drop-shadow-sm md:text-5xl lg:text-6xl"
 			>
 				{content.hero.greeting}
 			</h1>
-			<p class="mb-10 max-w-lg text-lg leading-relaxed font-bold text-sys-text/80 md:text-xl">
+			<p class="mb-10 max-w-lg text-lg leading-relaxed text-sys-text/80 md:text-xl">
 				{content.hero.subtitle}
 			</p>
 			<div class="flex flex-wrap items-center gap-4">
