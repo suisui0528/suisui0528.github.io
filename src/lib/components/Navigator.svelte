@@ -19,14 +19,14 @@
 >
 	<a
 		href="#hero"
-		class="text-xl font-black tracking-widest text-sys-text drop-shadow-sm transition-colors duration-200 hover:text-sys-accent"
+		class="text-2xl font-black tracking-widest text-sys-text drop-shadow-sm transition-colors duration-200 hover:text-sys-accent"
 	>
 		水水 SuiSui
 	</a>
 
 	<div class="flex items-center gap-6">
 		<!-- Navigation Links -->
-		<div class="hidden gap-6 text-sm font-bold text-sys-text/80 md:flex">
+		<div class="hidden gap-6 text-lg text-sys-text/80 md:flex">
 			<a href="#hero" class="transition-colors duration-200 hover:text-sys-accent">殿堂</a>
 			<a href="#about" class="transition-colors duration-200 hover:text-sys-accent">淵源</a>
 		</div>
