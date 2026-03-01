@@ -18,7 +18,6 @@
 		artist: artistImg,
 		'l2d-artist': l2dArtistImg
 	};
-
 	const stats = [
 		{ label: '性別', value: character.gender },
 		{ label: '年齡', value: `${character.age} 歲` },
@@ -27,7 +26,6 @@
 		{ label: '體重', value: character.weight },
 		{ label: '粉絲名', value: character.fanName }
 	];
-
 	const artists = [
 		{ role: '繪師', ...character.artist },
 		{ role: 'Live2D', ...character.l2dArtist }
@@ -59,10 +57,10 @@
 				<div
 					class="rounded-xl border border-sys-surface bg-sys-surface/60 p-4 text-center backdrop-blur-md transition-all duration-300 hover:border-sys-accent/30 hover:shadow-md"
 				>
-					<div class="text-[11px] font-bold tracking-widest text-sys-text/45 uppercase">
+					<div class="text-sm font-bold tracking-widest text-sys-text/45 uppercase">
 						{stat.label}
 					</div>
-					<div class="mt-1 text-base font-black text-sys-text md:text-lg">{stat.value}</div>
+					<div class="mt-1 text-lg font-black text-sys-text md:text-lg">{stat.value}</div>
 				</div>
 			{/each}
 		</div>
@@ -70,11 +68,11 @@
 		<!-- Personality & Hobbies Tags -->
 		<div class="mb-12 flex flex-col gap-6 sm:flex-row sm:gap-10" use:reveal={{ delay: 200 }}>
 			<div>
-				<h3 class="mb-3 text-xs font-bold tracking-widest text-sys-text/50 uppercase">性格</h3>
+				<h3 class="mb-3 text-sm font-bold tracking-widest text-sys-text/50 uppercase">性格</h3>
 				<div class="flex flex-wrap gap-2">
 					{#each character.personalities as p}
 						<span
-							class="rounded-full border border-sys-accent/20 bg-sys-accent/10 px-4 py-1.5 text-sm font-bold text-sys-accent"
+							class="rounded-full border border-sys-text/10 bg-sys-text/5 px-4 py-1.5 text-sys-text/70"
 						>
 							{p}
 						</span>
@@ -82,11 +80,11 @@
 				</div>
 			</div>
 			<div>
-				<h3 class="mb-3 text-xs font-bold tracking-widest text-sys-text/50 uppercase">興趣</h3>
+				<h3 class="mb-3 text-sm font-bold tracking-widest text-sys-text/50 uppercase">興趣</h3>
 				<div class="flex flex-wrap gap-2">
 					{#each character.hobbies as h}
 						<span
-							class="rounded-full border border-sys-text/10 bg-sys-text/5 px-4 py-1.5 text-sm font-bold text-sys-text/70"
+							class="rounded-full border border-sys-text/10 bg-sys-text/5 px-4 py-1.5 text-sys-text/70"
 						>
 							{h}
 						</span>
@@ -97,9 +95,7 @@
 
 		<!-- Artist Credits -->
 		<div class="mt-14" use:reveal={{ delay: 400 }}>
-			<h3
-				class="mb-6 text-center text-xs font-bold tracking-widest text-sys-text/40 uppercase"
-			>
+			<h3 class="mb-6 text-center text-sm font-bold tracking-widest text-sys-text/40 uppercase">
 				賦形之手
 			</h3>
 			<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -123,12 +119,12 @@
 									href={artist.url}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-lg font-black text-sys-text transition-colors hover:text-sys-accent"
+									class="text-lg text-sys-text transition-colors hover:text-sys-accent"
 								>
 									{artist.name}
 								</a>
 							{:else}
-								<span class="text-lg font-black text-sys-text">{artist.name}</span>
+								<span class="text-lg text-sys-text">{artist.name}</span>
 							{/if}
 						</div>
 					</div>
@@ -138,23 +134,23 @@
 
 		<!-- Social Links -->
 		<div class="mt-14 flex flex-col items-center gap-5" use:reveal={{ delay: 500 }}>
-			<h3 class="text-xs font-bold tracking-widest text-sys-text/40 uppercase">交流管道</h3>
+			<h3 class="text-sm font-bold tracking-widest text-sys-text/40 uppercase">連結</h3>
 			<div class="flex flex-wrap items-center justify-center gap-4">
 				{#each socialLinks as link (link.name)}
 					<a
 						href={link.url}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="flex items-center gap-2 rounded-full border border-sys-surface bg-sys-surface/60 px-5 py-2.5 text-sm font-bold text-sys-text/70 backdrop-blur-md transition-all duration-200 hover:border-sys-accent/30 hover:text-sys-accent hover:shadow-md"
+						class="flex items-center gap-2 rounded-full border border-sys-surface bg-sys-surface/60 px-5 py-2.5 text-lg font-bold text-sys-text/70 backdrop-blur-md transition-all duration-200 hover:border-sys-accent/30 hover:text-sys-accent hover:shadow-md"
 						aria-label={link.name}
 					>
 						<img
 							src={getIconUrl(link.icon)}
 							alt=""
-							class="h-4 w-4 object-contain"
+							class="h-7 w-7 object-contain"
 							aria-hidden="true"
 						/>
-						{link.name}
+						<span class="hidden md:inline">{link.name} </span>
 					</a>
 				{/each}
 			</div>
