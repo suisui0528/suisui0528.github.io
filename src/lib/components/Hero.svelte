@@ -132,18 +132,18 @@
 					href="https://www.twitch.tv/suisui_0528"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="group relative overflow-hidden rounded-full bg-sys-accent px-8 py-4 font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-sys-accent-hover hover:shadow-[0_0_20px_rgba(204,0,34,0.4)] active:scale-95"
+					class="group relative overflow-hidden rounded-full bg-sys-accent px-8 py-4 text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-sys-accent-hover hover:shadow-[0_0_20px_rgba(204,0,34,0.4)] active:scale-95"
 				>
-					進入直播間
+					聽聞預言
 					<span
 						class="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 group-hover:translate-x-full"
 					></span>
 				</a>
 				<a
 					href="#about"
-					class="rounded-full border-2 border-sys-accent/40 px-8 py-4 font-bold text-sys-accent transition-all duration-300 hover:-translate-y-1 hover:border-sys-accent hover:bg-sys-accent/10 active:scale-95"
+					class="rounded-full border-2 border-sys-accent/40 px-8 py-4 text-sys-accent transition-all duration-300 hover:-translate-y-1 hover:border-sys-accent hover:bg-sys-accent/10 active:scale-95"
 				>
-					聽聞預言
+					關於我
 				</a>
 			</div>
 		</div>
