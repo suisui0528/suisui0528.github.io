@@ -28,7 +28,6 @@ export interface ContentData {
 		title: string;
 	};
 	footer: {
-		copyright: string;
 		authorName: string;
 		authorUrl: string;
 	};
@@ -43,7 +42,6 @@ export const content: ContentData = {
 		title: '先知的淵源'
 	},
 	footer: {
-		copyright: '© 2024 SuiSui. All rights reserved.',
 		authorName: '謝孟哲',
 		authorUrl: 'https://www.hsieh-dev.us.ci/'
 	}
