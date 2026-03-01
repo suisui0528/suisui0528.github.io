@@ -33,6 +33,12 @@ export interface ContentData {
 	};
 }
 
+interface SocialLink {
+	name: string;
+	url: string;
+	icon: string;
+}
+
 export const content: ContentData = {
 	hero: {
 		greeting: '歡迎來到魔界預言小鋪',
@@ -46,12 +52,6 @@ export const content: ContentData = {
 		authorUrl: 'https://www.hsieh-dev.us.ci/'
 	}
 };
-
-interface SocialLink {
-	name: string;
-	url: string;
-	icon: string;
-}
 
 export const character: CharacterData = {
 	name: '水水',
