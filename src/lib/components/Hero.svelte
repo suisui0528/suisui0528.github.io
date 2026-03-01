@@ -53,7 +53,7 @@
 			<img
 				src={backgroundMap[m]}
 				alt=""
-				class="absolute inset-0 h-full w-full scale-110 object-cover blur-md transition-opacity duration-1000
+				class="absolute inset-0 h-full w-full scale-110 object-cover blur-sm transition-opacity duration-1000
 					{mode === m ? 'opacity-100' : 'opacity-0'}"
 				aria-hidden="true"
 				decoding="async"
@@ -63,7 +63,7 @@
 
 	<!-- Foggy overlay -->
 	<div
-		class="absolute inset-0 z-[1] bg-linear-to-b from-sys-base/5 via-sys-base/25 to-sys-base/80"
+		class="absolute inset-0 z-1 bg-linear-to-b from-sys-base/0 via-sys-base/10 to-sys-base"
 	></div>
 
 	<!-- Astrolabe Time Control -->
