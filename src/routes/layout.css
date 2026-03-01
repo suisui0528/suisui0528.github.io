@@ -1,1 +1,68 @@
 @import 'tailwindcss';
+
+@theme {
+	--font-sans: 'wdxl-lubrifont-tc', ui-sans-serif, system-ui, sans-serif;
+	--color-primary-900: #0a0a1a;
+	--color-primary-800: #1a1a2e;
+	--color-primary-600: #2d2f5a;
+	--color-accent-gold: #c3a35f;
+	--color-accent-glow: #e2c079;
+
+	--animate-float: float 6s ease-in-out infinite;
+	--animate-astrolabe-spin: astrolabe-spin 120s linear infinite;
+	--animate-crystal-glow: crystal-glow 4s ease-in-out infinite;
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+	}
+
+	@keyframes astrolabe-spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes crystal-glow {
+		0%,
+		100% {
+			filter: drop-shadow(0 0 15px rgba(132, 212, 255, 0.4));
+		}
+		50% {
+			filter: drop-shadow(0 0 35px rgba(132, 212, 255, 0.8));
+		}
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: var(--color-primary-900);
+	color: #e2e8f0;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* Custom Scrollbar for mystique */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--color-primary-900);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color-primary-600);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-accent-gold);
+}
