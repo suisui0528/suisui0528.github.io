@@ -107,6 +107,7 @@
 							<img
 								src={artistImageMap[artist.image]}
 								alt={artist.name}
+								loading="lazy"
 								class="h-16 w-16 shrink-0 rounded-full border-2 border-sys-accent/20 object-cover"
 							/>
 						{/if}
@@ -146,7 +147,8 @@
 					>
 						<img
 							src={getIconUrl(link.icon)}
-							alt=""
+							alt={link.name}
+							loading="lazy"
 							class="h-7 w-7 object-contain"
 							aria-hidden="true"
 						/>

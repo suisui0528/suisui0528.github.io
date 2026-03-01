@@ -52,7 +52,8 @@
 		{#each modes as m (m)}
 			<img
 				src={backgroundMap[m]}
-				alt=""
+				alt="background image"
+				loading="lazy"
 				class="absolute inset-0 h-full w-full scale-110 object-cover blur-sm transition-opacity duration-1000
 					{mode === m ? 'opacity-100' : 'opacity-0'}"
 				aria-hidden="true"
@@ -155,6 +156,7 @@
 			<img
 				src={characterImg}
 				alt={character.name}
+				loading="lazy"
 				class="relative z-20 h-auto w-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-105"
 				fetchpriority="high"
 			/>
