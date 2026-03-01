@@ -1,9 +1,10 @@
 interface ArtistData {
 	name: string;
 	url?: string;
+	image?: string;
 }
 
-interface ChracterData {
+interface CharacterData {
 	name: string;
 	about: string;
 	gender: string;
@@ -25,30 +26,26 @@ export interface ContentData {
 	};
 	about: {
 		title: string;
-		intro: string;
 	};
 	footer: {
 		copyright: string;
 		authorName: string;
 		authorUrl: string;
-		quote: string;
 	};
 }
 
 export const content: ContentData = {
 	hero: {
 		greeting: '歡迎來到魔界預言小鋪',
-		subtitle: '歡迎來到先知的殿堂。在此，未來的迷霧將被揭開...'
+		subtitle: '這裡是先知的殿堂。在此，未來的迷霧將被揭開...'
 	},
 	about: {
-		title: '先知的淵源',
-		intro: '揭開神秘的面紗，窺探繁星所指引的真相。'
+		title: '先知的淵源'
 	},
 	footer: {
-		copyright: '© 2024 水水. All rights reserved.',
-		authorName: '水水',
-		authorUrl: 'https://suisui0528.github.io/',
-		quote: '「星辰的軌跡，指引著迷途的星靈。」'
+		copyright: '© 2024 SuiSui. All rights reserved.',
+		authorName: '謝孟哲',
+		authorUrl: 'https://www.hsieh-dev.us.ci/'
 	}
 };
 
@@ -58,7 +55,7 @@ interface SocialLink {
 	icon: string;
 }
 
-export const character: ChracterData = {
+export const character: CharacterData = {
 	name: '水水',
 	about:
 		'歡迎各位光臨，在這裡可以稱在下為先知，也可以稱呼我為水水，雖自稱先知不過預言有時不準就是了，如何？今日想看看自己那模糊的未來嗎？',
@@ -70,8 +67,8 @@ export const character: ChracterData = {
 	personalities: ['捉摸不定', '搞笑'],
 	hobbies: ['音樂', '遊戲', '繪圖', '預言'],
 	fanName: '客人',
-	artist: { name: '語笙ゆり', url: 'https://www.twitch.tv/yusheng0116/' },
-	l2dArtist: { name: '格林諾辰' }
+	artist: { name: '語笙ゆり', url: 'https://www.twitch.tv/yusheng0116/', image: 'artist' },
+	l2dArtist: { name: '格林諾辰', image: 'l2d-artist' }
 };
 
 export const socialLinks: SocialLink[] = [
